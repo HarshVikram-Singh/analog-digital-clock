@@ -24,10 +24,9 @@ body{
 	width: 450px;
 	height: 450px;
 	border-radius: 100%;
-	box-shadow: 5px 6px 80px #66ffcc;
-	
-	background-color:gradient;
-	border: 6px solid skyblue;
+	box-shadow: 5px 6px 50px brown;
+	box-shadow:inset 1px 5px 13px solid white;
+	border: 6px solid black;
 	position:absolute;
 }
 
