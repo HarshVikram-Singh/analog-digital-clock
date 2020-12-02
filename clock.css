@@ -1,0 +1,103 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+}
+html{
+	background:linear gradient;
+	text-align: center;
+	font-size: 10px;
+}
+body{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	background-image: url("dark-brick-wall-background-vector-13771385.jpg");
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	
+}
+
+
+.clock{
+	width: 450px;
+	height: 450px;
+	border-radius: 100%;
+	box-shadow: 5px 6px 80px #66ffcc;
+	
+	background-color:gradient;
+	border: 6px solid skyblue;
+	position:absolute;
+}
+
+ .number{
+	color:yellow;
+	font-family: sans-serif;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 2.4rem;
+
+	
+}
+  
+   .hand {
+	--rotation:0;
+	position: absolute ;
+	bottom: 50%;
+	left: 50%;
+	border: 1px solid white;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+     height: 40%;
+     z-index: 10;
+     transform-origin: bottom;
+	transform: translateX(-50%));
+          }
+
+  .clock::after {
+  content: '';
+  position: absolute;
+  background-color: orange;
+  z-index: 11;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.second {
+  width: 3px;
+  height: 25%;
+  background-color: green;
+}
+
+.minute {
+  width: 3px;
+  height: 40%;
+  background-color: yellow;
+}
+
+ .hour {
+  width: 5px;
+  height: 32%;
+  background-color: red;
+}
+
+#digitalClock{
+	position: absolute;
+	z-index:1;
+	font-family: cursive;
+	top: 50%;
+	left: 55%;
+	transform:translateY(-50);
+	text-align: center;
+	background-color: white;
+	font-size: 30px;
+	border: 4px solid grey;
+	width: 150px;
+}
